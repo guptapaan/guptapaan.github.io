@@ -1,0 +1,365 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ PAANS
+{% endblock title %}
+
+{% block body %}
+
+{% with messages=get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="static/album.css">
+
+    
+  </head>
+  
+
+  <!--Album-->
+
+<main >
+  
+
+	<!--<section class="py-2 text-center container "  >
+	  <div class="row py-lg-5">
+		<div class="col-lg-6 col-md-8 mx-auto">
+		  <h2  class="headlabel">Quick Order</h2>
+		  
+		  
+		  <p class="redText">The Most popular paan as per the customer prefrences,add them to card and get your ready within no time .</p>
+		  <p>
+			<a href="/PAANS" class="btn btn-primary my-2">Browse Paans</a>
+			<a href="/BEVERAGES" class="btn btn-secondary my-2">Browse Beverages</a>
+		  </p>
+		</div>
+	  </div>
+	</section>-->
+  
+	<div class="album py-5 bg-light "  >
+	  <div class="container"  >
+  
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" >
+		  <!--masala paan-->
+		  <div class="col" >
+			<div class="card shadow-sm">
+			  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/masalapaan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Masala Paan</h6></img>
+			  <div class="card-body">
+				<p class="card-text">Made of betel leaves filled with a range of sweet jam-like spreads and crunchy titbits like tutti-frutti,cherries,chopped dates,etc..,is a delightful treat to munch on,anda very effective mouth freshener. </p>
+				<div class="d-flex justify-content-between align-items-center">
+				  <div class="btn-group">
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+					  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+					<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+					  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+				  </div>
+				  
+				  <h6 style="text-align:right;"><span >&#8377;</span>20<h6>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!--standard paan-->
+		  <div class="col" >
+			<div class="card shadow-sm">
+			  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/standardpaan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Standard Paan</h6></img>
+			  <div class="card-body">
+				<p class="card-text">Made of betel leaves filled with a range of sweet jam-like spreads and crunchy titbits like tutti-frutti,cherries,chopped dates,etc..,is a delightful treat to munch on,anda very effective mouth freshener. </p>
+				<div class="d-flex justify-content-between align-items-center">
+				  <div class="btn-group">
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+					  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+					<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+					  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+				  </div>
+				  
+				  <h6 style="text-align:right;"><span >&#8377;</span>20<h6>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!--choclate paan-->
+		  <div class="col" >
+			<div class="card shadow-sm">
+			  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/choclatepaan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Choclate Paan</h6></img>
+			  <div class="card-body">
+				<p class="card-text">Made of betel leaves filled with a range of premium choclate spreads and syroup and crunchy titbits like tutti-frutti,cherries,etc..,is an appetizing desert.                                                                                                             </p>
+				<div class="d-flex justify-content-between align-items-center">
+				  <div class="btn-group">
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+					  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+					<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+					  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+				  </div>
+				  
+				  <h6 style="text-align:right;"><span >&#8377;</span>30<h6>
+				</div>
+			  </div>
+			</div>
+		  </div>
+  <!--MeethaPan-->
+		  <div class="col" >
+			<div class="card shadow-sm">
+			  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/meethapan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Meetha Paan</h6></img>
+			  <div class="card-body">
+				<p class="card-text">Made of betel leaves filled with a range of sweet jam-like spreads and crunchy titbits like tutti-frutti,cherries,chopped dates,etc..,is a delightful treat to munch on,anda very effective mouth freshener. </p>
+				<div class="d-flex justify-content-between align-items-center">
+				  <div class="btn-group">
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+					  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+					<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+					  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+				  </div>
+				  
+				  <h6 style="text-align:right;"><span >&#8377;</span>20<h6>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!--Maghai Paan-->
+		  <div class="col" >
+			<div class="card shadow-sm">
+			  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/maghaipaan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Maghai Paan</h6></img>
+			  <div class="card-body">
+				<p class="card-text">Made of betel leaves filled with a range of sweet jam-like spreads and crunchy titbits like tutti-frutti,cherries,chopped dates,etc..,is a delightful treat to munch on,anda very effective mouth freshener. </p>
+				<div class="d-flex justify-content-between align-items-center">
+				  <div class="btn-group">
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+					  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+					<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+					  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+				  </div>
+				  
+				  <h6 style="text-align:right;"><span >&#8377;</span>20<h6>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!--Normal Paan-->
+		  <div class="col" >
+			<div class="card shadow-sm">
+			  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/normalpaan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Normal Paan</h6></img>
+			  <div class="card-body">
+				<p class="card-text">Made of betel leaves filled with a range of sweet jam-like spreads and crunchy titbits like tutti-frutti,cherries,chopped dates,etc..,is a delightful treat to munch on,anda very effective mouth freshener. </p>
+				<div class="d-flex justify-content-between align-items-center">
+				  <div class="btn-group">
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+					  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+					<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+					  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+				  </div>
+				  
+				  <h6 style="text-align:right;"><span >&#8377;</span>20<h6>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!--banarasi paan-->
+		  <div class="col" >
+			<div class="card shadow-sm">
+			  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/banarasipaan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Banarasi Paan</h6></img>
+			  <div class="card-body">
+				<p class="card-text">Made of betel leaves filled with a range of sweet jam-like spreads and crunchy titbits like tutti-frutti,cherries,chopped dates,etc..,is a delightful treat to munch on,anda very effective mouth freshener. </p>
+				<div class="d-flex justify-content-between align-items-center">
+				  <div class="btn-group">
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+					  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+					<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+					  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+				  </div>
+				  
+				  <h6 style="text-align:right;"><span >&#8377;</span>20<h6>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!--kimam paan-->
+		  <div class="col" >
+			<div class="card shadow-sm">
+			  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/kimampaan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Kimam Paan</h6></img>
+			  <div class="card-body">
+				<p class="card-text">Made of betel leaves filled with a range of sweet jam-like spreads and crunchy titbits like tutti-frutti,cherries,chopped dates,etc..,is a delightful treat to munch on,anda very effective mouth freshener. </p>
+				<div class="d-flex justify-content-between align-items-center">
+				  <div class="btn-group">
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+					  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+					<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+					<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+					  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+					  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+					</svg></button>
+				  </div>
+				  
+				  <h6 style="text-align:right;"><span >&#8377;</span>30<h6>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+ <!--Nutella paan-->
+ <div class="col" >
+	<div class="card shadow-sm">
+	  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/nutellapaan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Nutella Paan</h6></img>
+	  <div class="card-body">
+		<p class="card-text">Made of betel leaves filled with a range of sweet jam-like spreads and crunchy titbits like tutti-frutti,cherries,chopped dates,etc..,is a delightful treat to munch on,anda very effective mouth freshener. </p>
+		<div class="d-flex justify-content-between align-items-center">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+			  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+			  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+			</svg></button>
+			<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+			<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+			  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+			  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+			</svg></button>
+		  </div>
+		  
+		  <h6 style="text-align:right;"><span >&#8377;</span>30<h6>
+		</div>
+	  </div>
+	</div>
+  </div>
+   <!--Nauratan paan-->
+ <div class="col" >
+	<div class="card shadow-sm">
+	  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/nauratanpaan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Nauratan Paan</h6></img>
+	  <div class="card-body">
+		<p class="card-text">Made of betel leaves filled with a range of sweet jam-like spreads and crunchy titbits like tutti-frutti,cherries,chopped dates,etc..,is a delightful treat to munch on,anda very effective mouth freshener. </p>
+		<div class="d-flex justify-content-between align-items-center">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+			  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+			  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+			</svg></button>
+			<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+			<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+			  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+			  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+			</svg></button>
+		  </div>
+		  
+		  <h6 style="text-align:right;"><span >&#8377;</span>25<h6>
+		</div>
+	  </div>
+	</div>
+  </div>
+   <!--Minakshi paan-->
+ <div class="col" >
+	<div class="card shadow-sm">
+	  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/meenakshipaan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Minakshi Paan</h6></img>
+	  <div class="card-body">
+		<p class="card-text">Made of betel leaves filled with a range of sweet jam-like spreads and crunchy titbits like tutti-frutti,cherries,chopped dates,etc..,is a delightful treat to munch on,anda very effective mouth freshener. </p>
+		<div class="d-flex justify-content-between align-items-center">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+			  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+			  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+			</svg></button>
+			<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+			<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+			  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+			  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+			</svg></button>
+		  </div>
+		  
+		  <h6 style="text-align:right;"><span >&#8377;</span>25<h6>
+		</div>
+	  </div>
+	</div>
+  </div>
+   <!--Flavoured Chutney  paan-->
+ <div class="col" >
+	<div class="card shadow-sm">
+	  <img class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="static/flavouredchutnipaan.jpg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><h6 align="center" width="4" height="4">Flavoured Chutney Paan</h6></img>
+	  <div class="card-body">
+		<p class="card-text">Made of betel leaves filled with a range of sweet jam-like spreads and crunchy titbits like tutti-frutti,cherries,chopped dates,etc..,is a delightful treat to munch on,anda very effective mouth freshener. </p>
+		<div class="d-flex justify-content-between align-items-center">
+		  <div class="btn-group">
+			<button type="button" class="btn btn-sm btn-outline-secondary"><svg fill="currentColor"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+			  <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+			  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+			</svg></button>
+			<button type="button" class="btn btn-sm btn-outline-secondary">0</button>
+			<button type="button" class="btn btn-sm btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+			  <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+			  <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+			</svg></button>
+		  </div>
+		  
+		  <h6 style="text-align:right;"><span >&#8377;</span>20<h6>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+
+
+		</div>
+	  </div>
+	</div>
+  
+  </main>
+  
+  
+  <!--<body>
+  <div class="container mt-3">
+	  <div class="row">
+	  <div class=></div>
+	  <div class="  jumbotron">
+		  
+		
+		<h1 class="text-center glow  " style="color:#4CFF4C;"><strong>WELCOME TO  GUPTA PAAN HOUSE</strong></h1>
+		  <h4 class="text-center " style="color:#4CFF4C;">गुप्ता पान मैं आपका स्वागत है</h4>
+	  </div></div></div>
+  </body>-->
+  
+  
+  {% endblock body %}
